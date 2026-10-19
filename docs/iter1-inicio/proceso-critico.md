@@ -16,12 +16,12 @@ Humberto tiene una sesión administrativa activa. Los productos están activos y
 ## Flujos alternos
 
 - A1. Si el comprador se identifica como cliente registrado, vincularlo mediante CU02. La venta puede continuar sin una cuenta asociada.
-- A2. Si el pago en efectivo supera el total, mostrar el vuelto. Para Yape o Plin, registrar la referencia de seis dígitos del prototipo.
+- A2. Si el pago en efectivo supera el total, mostrar el vuelto. Para Yape o Plin, registrar la referencia de operación del prototipo.
 
 ## Excepciones y compensación
 
 - E1. Si falta stock, informar qué producto no tiene cantidad suficiente y rechazar la venta.
-- E2. Si la venta está vacía o el método de pago no está admitido, solicitar la corrección.
+- E2. Si la venta está vacía o las cantidades no son válidas, solicitar la corrección.
 - E3. Si falla la persistencia, no confirmar la venta.
 - C1. Revertir la transacción para evitar que queden una venta parcial o existencias descontadas sin una venta confirmada.
 

@@ -9,6 +9,6 @@
 | 5 | Los términos y actores se nombran de forma consistente. | Conforme | Humberto desempeña los cuatro roles internos; el proveedor no tiene acceso a la aplicación. |
 | 6 | Los requisitos funcionales y no funcionales conservan los identificadores del informe. | Conforme | RF-01 a RF-15 y RNF-01 a RNF-06 se mantienen con sus significados actuales. |
 | 7 | Los casos de uso conservan los identificadores del modelo vigente. | Conforme | CU01-CU06, CU08 y CU09. |
-| 8 | El diagrama de casos de uso del informe está incorporado al repositorio. | Pendiente | El diagrama está en la figura 2 del informe; falta agregar su archivo al repositorio. |
+| 8 | El diagrama de casos de uso del informe está incorporado al repositorio. | Pendiente | El diagrama está en el informe; falta agregar su archivo al repositorio. |
 | 9 | La identificación del grupo coincide con la carátula del informe. | Por confirmar | El informe indica Grupo 4 y el repositorio se denomina Grupo 3. |
-| 10 | La exportación PNG del diagrama de actividad coincide con el archivo editable. | Conforme | Se actualizarán juntos el archivo Draw.io y su exportación. |
+| 10 | La exportación PNG representa el flujo principal y las excepciones del archivo editable. | Conforme | Ambos muestran CU01, E1, E2, E3 y C1. |
