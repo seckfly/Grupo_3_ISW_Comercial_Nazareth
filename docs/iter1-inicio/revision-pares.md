@@ -4,7 +4,9 @@ Revisor: ____________________
 
 Fecha: ____________________
 
-Pull Request: ____________________
+Pull Request: https://github.com/seckfly/Grupo_3_ISW_Comercial_Nazareth/pull/1
+
+Marca Sí o No en cada pregunta. Si marcas No, indica el archivo y el cambio que propones.
 
 | # | Pregunta | Sí / No | Hallazgo o comentario |
 |---|---|---|---|
