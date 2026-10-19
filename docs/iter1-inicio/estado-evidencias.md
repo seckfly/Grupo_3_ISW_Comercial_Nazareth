@@ -5,11 +5,11 @@
 | 1 | Repositorio público, rama iter1-inicio y Documento de Visión | Repositorio y rama creados; Visión cargada en esta rama |
 | 2 | Tablero Trello con cuatro fases, riesgos y tarjetas de iteración | Pendiente de crear el tablero propio |
 | 3 | Matriz fase–artefacto | Cargada; falta captura de evidencia |
-| 4 | Diagrama editable de CU01 con flujo principal y excepciones | Fuente Draw.io cargada; falta exportar y cargar PNG según la guía |
+| 4 | Diagrama editable de CU01 y exportación PNG | Archivo Draw.io, vista SVG y PNG cargados |
 | 5 | Glosario y checklist de coherencia | Cargados; pendientes documentados |
 | 6 | Cinco riesgos con probabilidad, impacto, mitigación y responsable | Cargados; responsables nominales pendientes |
 | 7 | Estructura por iteración, convenciones y commits descriptivos | Estructura y convenciones cargadas |
-| 8 | Pull Request y revisión por pares documentada | Pendiente de crear PR y recibir revisión externa |
+| 8 | Pull Request y revisión por pares documentada | PR abierto; revisión externa pendiente |
 | 9 | Tag v1.0-iter1 y release publicada | Pendiente de revisión y merge |
 
 ## Discrepancia del nombre de grupo
