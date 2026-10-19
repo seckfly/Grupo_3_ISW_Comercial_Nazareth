@@ -1,5 +1,7 @@
 # Documento de Visión v1: Comercial Nazareth
 
+Grupo 4.
+
 ## 1. Propósito
 
 Organizar el registro de ventas y el control de productos de Comercial Nazareth, con un portal para clientes registrados.

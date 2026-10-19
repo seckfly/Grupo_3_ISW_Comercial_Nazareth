@@ -35,6 +35,8 @@
 
 CU01 incluye CU03. CU02 extiende CU01 cuando el comprador se identifica como cliente registrado. CU05 y CU08 incluyen CU03. CU08 extiende CU06 cuando el stock está por debajo del mínimo y Humberto decide reponer. La recepción requiere una orden pendiente.
 
+![Diagrama de casos de uso de Comercial Nazareth](../../modelos/iter1/casos-de-uso.png)
+
 ## Requisitos no funcionales
 
 | ID | Requisito | Criterio de aceptación |

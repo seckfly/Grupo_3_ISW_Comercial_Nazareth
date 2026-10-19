@@ -1,5 +1,7 @@
 # Sistema de gestión comercial y portal de clientes
 
+Grupo 4.
+
 Proyecto de Comercial Nazareth, negocio minorista de abarrotes y productos de primera necesidad en Ascope, La Libertad.
 
 ## Documentación
@@ -15,8 +17,9 @@ Proyecto de Comercial Nazareth, negocio minorista de abarrotes y productos de pr
 - [Revisión por pares](docs/iter1-inicio/revision-pares.md)
 - [Convenciones](docs/00-convenciones.md)
 
-## Modelo de actividad
+## Diagramas
 
+- [Diagrama de casos de uso](modelos/iter1/casos-de-uso.png)
 - [Archivo editable de CU01](modelos/iter1/actividad-registrar-venta.drawio)
 - [Exportación PNG de CU01](modelos/iter1/actividad-registrar-venta.png)
 
