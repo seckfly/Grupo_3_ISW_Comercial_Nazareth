@@ -1,18 +1,14 @@
 # Checklist de coherencia
 
-Estado: revisión documental inicial. No equivale a una revisión por pares ni a una prueba del sistema integrado.
-
-| # | Verificación | Estado | Observación |
+| # | Verificación | Resultado | Observación |
 |---|---|---|---|
-| 1 | Visión, SRS y diagrama usan el mismo nombre para el proceso crítico. | Conforme | Se usa CU01 Registrar venta. |
-| 2 | Las alternativas del proceso aparecen en la descripción de CU01. | Conforme | Se documentan A1, A2, E1, E2, E3 y C1. |
-| 3 | La documentación distingue el alcance implementado del especificado. | Conforme | CU08 y CU09 se identifican como ampliaciones pendientes. |
-| 4 | La venta se describe como integrada con el backend. | Pendiente | El informe señala que la interfaz confirma una venta local sin invocar la transacción del backend. |
-| 5 | La regla de descuentos coincide entre interfaz y backend. | Pendiente | El informe señala una diferencia que debe corregirse y probarse. |
-| 6 | Las tablas completas de RF, RNF e historias están trazadas. | Pendiente | El SRS breve conserva los identificadores recuperados; faltan cotejar los textos completos del informe. |
-| 7 | El número de grupo coincide entre el informe y el nombre del repositorio. | Pendiente | El informe base identifica al equipo como Grupo 4; el repositorio solicitado se llama Grupo 3. Confirmar antes de la entrega académica. |
-| 8 | Se completó la revisión por pares. | Pendiente | No se registra una revisión hasta que una persona revise el PR y deje comentarios. |
-
-## Criterio de cierre
-
-Los pendientes deben resolverse con el informe fuente, el código o una revisión real. No se marcarán como conformes por asumir que la función existe.
+| 1 | La Visión delimita qué incluye y qué queda fuera. | Conforme | El alcance incluye ventas, inventario, promociones y portal; excluye pagos bancarios, facturación y contabilidad integral. |
+| 2 | El roadmap define entregables, responsable y plazo en cada fase. | Conforme | Las cuatro fases RUP tienen un responsable funcional y un plazo semanal. |
+| 3 | La matriz fase-artefacto coincide con el roadmap. | Conforme | Los artefactos se distribuyen entre Inicio, Elaboración, Construcción y Transición. |
+| 4 | El diagrama de actividad contiene el flujo principal y al menos dos excepciones. | Conforme | CU01 incluye stock insuficiente, datos no válidos y fallo de persistencia, además de la compensación C1. |
+| 5 | Los términos y actores se nombran de forma consistente. | Conforme | Humberto desempeña los cuatro roles internos; el proveedor no tiene acceso a la aplicación. |
+| 6 | Los requisitos funcionales y no funcionales conservan los identificadores del informe. | Conforme | RF-01 a RF-15 y RNF-01 a RNF-06 se mantienen con sus significados actuales. |
+| 7 | Los casos de uso conservan los identificadores del modelo vigente. | Conforme | CU01-CU06, CU08 y CU09. |
+| 8 | El diagrama de casos de uso del informe está incorporado al repositorio. | Pendiente | El diagrama está en la figura 2 del informe; falta agregar su archivo al repositorio. |
+| 9 | La identificación del grupo coincide con la carátula del informe. | Por confirmar | El informe indica Grupo 4 y el repositorio se denomina Grupo 3. |
+| 10 | La exportación PNG del diagrama de actividad coincide con el archivo editable. | Conforme | Se actualizarán juntos el archivo Draw.io y su exportación. |

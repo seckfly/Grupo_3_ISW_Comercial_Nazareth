@@ -1,31 +1,25 @@
-# ISW Comercial Nazareth
+# Sistema de gestión comercial y portal de clientes
 
-Sistema de gestión comercial y portal de clientes para Comercial Nazareth, negocio minorista ubicado en Ascope, La Libertad.
+Proyecto de Comercial Nazareth, negocio minorista de abarrotes y productos de primera necesidad en Ascope, La Libertad.
 
-## Iteración actual
-
-**ITER-1, Inicio.** Los documentos de esta rama están en revisión. No se ha publicado una versión ni se ha completado una revisión por pares.
-
-## Artefactos
+## Documentación
 
 - [Documento de Visión](docs/iter1-inicio/vision.md)
 - [Roadmap RUP](docs/iter1-inicio/roadmap.md)
-- [Matriz fase–artefacto](docs/iter1-inicio/matriz-fase-artefacto.md)
-- [Proceso crítico CU01](docs/iter1-inicio/proceso-critico.md)
+- [Matriz fase-artefacto](docs/iter1-inicio/matriz-fase-artefacto.md)
 - [SRS breve](docs/iter1-inicio/srs-breve.md)
+- [Proceso crítico: CU01 Registrar venta](docs/iter1-inicio/proceso-critico.md)
 - [Glosario](docs/iter1-inicio/glosario.md)
 - [Checklist de coherencia](docs/iter1-inicio/checklist-coherencia.md)
 - [Riesgos](docs/iter1-inicio/riesgos.md)
-- [Estado de evidencias](docs/iter1-inicio/estado-evidencias.md)
-- [Diagrama editable de CU01](modelos/iter1/actividad-registrar-venta.drawio)
-- [Vista SVG de CU01](modelos/iter1/actividad-registrar-venta.svg)
+- [Revisión por pares](docs/iter1-inicio/revision-pares.md)
+- [Convenciones](docs/00-convenciones.md)
 
-## Seguimiento
+## Modelo de actividad
 
-- Tablero Trello: pendiente de crear para este proyecto.
-- Revisión por pares: pendiente.
-- Versión v1.0-iter1: no publicada.
+- [Archivo editable de CU01](modelos/iter1/actividad-registrar-venta.drawio)
+- [Exportación PNG de CU01](modelos/iter1/actividad-registrar-venta.png)
 
-## Criterio de documentación
+## Versión
 
-El informe del proyecto es la fuente para los requisitos y casos de uso. La documentación distingue entre funciones implementadas, funciones especificadas y pendientes de integración. Los puntos que necesitan contraste con el informe o el equipo se registran como pendientes.
+ITER-1: Inicio

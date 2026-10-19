@@ -2,29 +2,31 @@
 
 ## Identificadores
 
-- RF-##: requisito funcional del informe.
-- RNF-##: requisito no funcional del informe.
-- HU-##: historia de usuario del informe.
+- RF-##: requisito funcional.
+- RNF-##: requisito no funcional.
+- HU-##: historia de usuario.
 - CU##: caso de uso.
-- RSK-###: riesgo del proyecto.
+- RSK-###: riesgo.
 - ITER-#: iteración RUP.
 - CLS-Nombre: clase del modelo.
 
-Se conservan los identificadores originales del informe. No se renumeran requisitos para hacerlos coincidir con esta práctica.
+Los identificadores RF, RNF, HU y CU conservan el significado del informe del proyecto.
 
-## Carpetas
+## Carpetas y archivos
 
 - docs/iterN-fase/: documentos de cada iteración.
-- modelos/iterN/: archivos fuente de los diagramas y sus exportaciones.
+- modelos/iterN/: fuentes y exportaciones de diagramas.
+- Nombres de archivo en minúsculas y separados por guiones.
+- Los diagramas usan el mismo nombre base para el archivo editable y la exportación.
 
-## Nombres y commits
+## Commits
 
-Los archivos usan minúsculas y guiones. Los diagramas se guardan con el mismo nombre base y extensión según el formato.
-
-Formato de commit: ITER1: descripción concreta e IDs afectados.
+Formato: ITER1: descripción concreta (IDs afectados).
 
 Ejemplo: ITER1: documenta excepciones de CU01.
 
 ## Versiones
 
-El tag previsto para cerrar la primera iteración es v1.0-iter1. Se publicará después de la revisión y la integración de los cambios aceptados.
+Formato del tag: vX.Y-iterN.
+
+Tag de cierre de la primera iteración: v1.0-iter1.
