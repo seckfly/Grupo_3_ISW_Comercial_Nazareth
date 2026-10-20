@@ -4,7 +4,7 @@
 
 Proyecto académico de Comercial Nazareth, negocio minorista de abarrotes y productos de primera necesidad ubicado en Ascope, La Libertad.
 
-El trabajo documentado corresponde a las semanas académicas 8, 9 y 10. El roadmap de este repositorio mantiene la misma distribución de fases, entregables, responsables y plazos que el tablero de Trello del proyecto.
+El trabajo documentado corresponde a las semanas académicas 8, 9 y 10. El roadmap de este repositorio mantiene la misma distribución de fases, entregables, responsables y plazos que el [tablero de Trello del proyecto](https://trello.com/b/9LEaT3KG/roadmap-rup-comercial-nazareth).
 
 ## Documentación
 
