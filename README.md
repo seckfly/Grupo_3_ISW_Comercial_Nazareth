@@ -4,7 +4,11 @@
 
 Proyecto académico de Comercial Nazareth, negocio minorista de abarrotes y productos de primera necesidad ubicado en Ascope, La Libertad.
 
-El trabajo documentado en la línea base de ITER-1 se desarrolló durante las semanas académicas 8, 9 y 10. El [roadmap RUP](docs/iter1-inicio/roadmap.md) planifica las cuatro fases: los entregables de ITER-2 a ITER-4 son previstos y no se presentan como artefactos ya producidos en la versión v1.0-iter1. El [tablero de Trello](https://trello.com/b/9LEaT3KG/roadmap-rup-comercial-nazareth) organiza las tareas por estado de avance y mantiene una lista separada de riesgos.
+La línea base **v1.0-iter1** reúne los artefactos documentales de Inicio elaborados durante las semanas académicas 8, 9 y 10. El roadmap conserva las cuatro fases RUP: ITER-1 enumera los artefactos incluidos en esta versión y ITER-2 a ITER-4 describen trabajo previsto según las tarjetas del tablero, no entregables ya producidos.
+
+El [tablero de Trello](https://trello.com/b/9LEaT3KG/roadmap-rup-comercial-nazareth) organiza las tareas por fase y mantiene una lista separada para los riesgos.
+
+Este repositorio contiene documentación y diagramas; no incluye el código fuente ni registros de ejecución. Los estados técnicos que se mencionan en el SRS y en la matriz de trazabilidad proceden de la revisión del informe de avance y no equivalen a pruebas reproducibles desde este repositorio.
 
 ## Documentación
 
@@ -24,10 +28,10 @@ El trabajo documentado en la línea base de ITER-1 se desarrolló durante las se
 ## Diagramas
 
 - [Diagrama de casos de uso (PNG)](modelos/iter1/casos-de-uso.png)
-- [Diagrama de actividad CU01 — Registrar venta (PNG)](modelos/iter1/actividad-registrar-venta.png)
+- [Diagrama de actividad CU01, Registrar venta (PNG)](modelos/iter1/actividad-registrar-venta.png)
 - [Diagrama de actividad CU01 en SVG](modelos/iter1/actividad-registrar-venta.svg)
 - [Archivo editable de CU01 en draw.io](modelos/iter1/actividad-registrar-venta.drawio)
 
-La documentación distingue las funciones descritas en el informe de aquellas que cuentan con integración técnica. El registro de una orden de compra no modifica el stock; el inventario cambia cuando se registra la recepción de mercadería.
+La especificación de compras y recepción no implica que esas funciones estén integradas. Una orden de compra no modifica el stock; el inventario aumenta al registrar la recepción de mercadería.
 
-La etiqueta v1.0-iter1 identifica la línea base de la fase de Inicio.
+La etiqueta **v1.0-iter1** identifica la línea base publicada de la fase de Inicio.
