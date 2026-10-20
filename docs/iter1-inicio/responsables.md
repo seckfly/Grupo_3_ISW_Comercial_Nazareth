@@ -1,20 +1,11 @@
-# Responsables propuestos
+# Responsabilidades del Grupo 4
 
-La siguiente distribución sirve para organizar el trabajo del Grupo 4. Se basa en áreas de trabajo, no en una evaluación de las capacidades personales. Debe confirmarse con el grupo antes de considerarse definitiva.
-
-| Integrante | Área propuesta | Responsabilidades |
+| Integrante | Responsabilidad principal | Tareas |
 |---|---|---|
-| Marco Antonio Martell Alvarez | Coordinación y repositorio | Mantener el índice, coordinar cambios, preparar PR y etiquetas, consolidar la entrega. No aprobar su propio PR como revisión por pares. |
-| Isaí Samuel Bejarano Benites | Análisis funcional | Mantener Visión, SRS, requisitos, reglas de negocio, historias de usuario y matriz de trazabilidad. |
-| Alonso Castillo Davalos | Arquitectura y modelos | Preparar diagramas de clases y secuencia, revisar dependencias y documentar el diseño de integración. |
-| Cesar Jeremin Alonso Chuquimango Reyes | Desarrollo e integración | Trabajar en la integración de CU01, servicios, persistencia y validaciones priorizadas. |
-| Alejandro Horna Quezada | Pruebas y calidad | Mantener escenarios Gherkin, ejecutar pruebas, registrar evidencias y comprobar las mitigaciones de riesgos. |
+| Marco Antonio Martell Alvarez (N00471929) | Coordinación y repositorio | Coordinar ITER-1, mantener la Visión y el roadmap, consolidar los cambios y preparar el cierre de versión. |
+| Alejandro Horna Quezada (N00475530) | Proceso crítico y validación | Revisar el flujo de CU01, las excepciones, la relación entre venta y stock y las comprobaciones de la transacción. |
+| Isaí Samuel Bejarano Benites (N00490010) | Requisitos y revisión técnica | Revisar el SRS, la trazabilidad, las reglas de acceso y la coherencia entre el comportamiento esperado y el estado técnico. |
+| Cesar Jeremin Alonso Chuquimango Reyes (N00480808) | Comprobación de consistencia | Revisar cálculos de venta, cantidades de productos, registro de riesgos y resultados de las comprobaciones asociadas. |
+| Alonso Caleb Castillo Davalos (N00491764) | Organización documental | Mantener la estructura de carpetas, revisar nombres de archivos y comprobar los enlaces internos del repositorio. |
 
-## Reglas para el trabajo
-
-- La persona que prepara un cambio no registra la revisión por pares de ese mismo cambio.
-- Los revisores se rotan entre integrantes.
-- Cada riesgo tiene una persona encargada de ejecutar o coordinar la mitigación y una prueba para comprobarla.
-- Los estados "terminado" y "mitigado" requieren evidencia.
-- La distribución es una propuesta pendiente de confirmación. No se han invitado integrantes ni solicitado permisos de GitHub.
-- El tablero de Trello será el lugar para confirmar responsables, fechas reales y estado de cada tarea cuando se incorpore su enlace.
+Las responsabilidades se distribuyen según el trabajo de cada iteración. Humberto Dávalos sigue siendo el único trabajador de Comercial Nazareth; Vendedor, Administrador, Responsable de almacén y Responsable de compras son roles funcionales de la misma persona.
