@@ -8,8 +8,8 @@ La matriz indica el nivel de madurez previsto para cada artefacto en las cuatro 
 |---|---|---|---|---|
 | Documento de Visión | Base | Refinado | — | Final |
 | SRS breve | Borrador | Base | Refinado | Final |
-| Casos de uso | Base | Base | Refinado | Final |
-| Diagrama de casos de uso | Base | Base | Refinado | Final |
+| Casos de uso | Base | Refinado | Refinado | Final |
+| Diagrama de casos de uso | Base | Refinado | Refinado | Final |
 | Diagrama de actividad de CU01 | Base | Refinado | — | — |
 | Matriz de trazabilidad | Base | Refinado | Refinado | Final |
 | Glosario | Base | Refinado | Refinado | Final |
