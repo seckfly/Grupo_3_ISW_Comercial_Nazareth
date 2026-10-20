@@ -13,7 +13,7 @@ La matriz concentra los artefactos necesarios para delimitar el sistema, explica
 | Glosario | Base | Unificar términos usados en requisitos y modelos | Mantener los nombres de la aplicación | Cierre |
 | Checklist de coherencia | Revisión inicial registrada | Repetir tras los ajustes de requisitos | Repetir tras las pruebas funcionales | Revisión final |
 | Registro de riesgos | Cinco riesgos identificados | Revisar probabilidad, impacto y mitigación | Incorporar resultados de las comprobaciones | Revisión final |
-| Registro de revisión | Revisión individual registrada | Actualizar si se revisan nuevos cambios | Registrar los hallazgos de las pruebas | Cierre |
+| Revisión | Revisión individual registrada | Actualizar si se revisan nuevos cambios | Registrar los hallazgos de las pruebas | Cierre |
 | Escenarios y pruebas | No aplica | Escenarios de datos inválidos, falta de stock y error de persistencia | Pruebas funcionales de CU01 | Pruebas de aceptación |
 | Manual de usuario | No aplica | No aplica | No aplica | Manual de usuario |
 | Validación de datos iniciales | No aplica | No aplica | No aplica | Validación de datos iniciales |
