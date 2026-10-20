@@ -20,8 +20,8 @@ Proyecto de Comercial Nazareth, negocio minorista de abarrotes y productos de pr
 ## Diagramas
 
 - [Diagrama de casos de uso](modelos/iter1/casos-de-uso.png)
-- [Archivo editable de CU01](modelos/iter1/actividad-registrar-venta.drawio)
-- [Exportación PNG de CU01](modelos/iter1/actividad-registrar-venta.png)
+- [Diagrama de actividad de CU01 (SVG)](modelos/iter1/actividad-registrar-venta.svg)
+- [Archivo editable de CU01 (draw.io)](modelos/iter1/actividad-registrar-venta.drawio)
 
 ## Versión
 

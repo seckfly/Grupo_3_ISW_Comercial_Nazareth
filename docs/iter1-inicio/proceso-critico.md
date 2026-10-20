@@ -28,3 +28,9 @@ Humberto tiene una sesión administrativa activa. Los productos están activos y
 ## Integración
 
 La interfaz confirma una venta local y no invoca la transacción disponible en el backend. El cálculo de descuentos de la interfaz tampoco coincide con el cálculo base del backend.
+
+## Diagrama de actividad
+
+![Diagrama de actividad de CU01: Registrar venta](../../modelos/iter1/actividad-registrar-venta.svg)
+
+Figura. Diagrama de actividad del caso de uso CU01: Registrar venta. Elaborado en diagrams.net (draw.io) a partir del flujo especificado en el proyecto.
