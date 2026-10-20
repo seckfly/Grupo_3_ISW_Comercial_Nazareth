@@ -1,5 +1,7 @@
 # SRS breve: Comercial Nazareth
 
+Este documento especifica el comportamiento requerido y resume el estado técnico descrito en el informe de avance. Los estados técnicos no demuestran por sí solos que una función esté integrada: este repositorio no incluye el código fuente ni registros de ejecución para reproducir las pruebas.
+
 ## Requisitos funcionales
 
 | ID | Requisito | Comportamiento requerido | CU | Estado técnico |
@@ -63,4 +65,4 @@ CU01 incluye CU03. CU02 extiende CU01 cuando el comprador se identifica como cli
 
 La [matriz de trazabilidad](matriz-trazabilidad.md) relaciona requisitos, historias de usuario, casos de uso, artefactos y comprobaciones definidas en el informe. Los identificadores PR-01 a PR-19 corresponden a comprobaciones propuestas, no a pull requests de GitHub.
 
-El informe registra 12 pruebas backend aprobadas y 0 fallidas. Ese resultado corresponde a las funciones examinadas en el backend y no demuestra la integración completa entre interfaz, API y MySQL.
+Las comprobaciones PR-01 a PR-19 son criterios de verificación propuestos, no pull requests de GitHub. El informe de avance describe el estado técnico y las pruebas de backend, pero este repositorio no incluye el código fuente ni los registros de ejecución necesarios para reproducir esos resultados. Las tablas documentan requisitos y comprobaciones; no atribuyen a esta línea base pruebas ejecutadas.
