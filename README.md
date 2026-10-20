@@ -18,7 +18,7 @@ El trabajo documentado corresponde a las semanas académicas 8, 9 y 10. El roadm
 - [Glosario](docs/iter1-inicio/glosario.md)
 - [Checklist de coherencia](docs/iter1-inicio/checklist-coherencia.md)
 - [Registro de riesgos](docs/iter1-inicio/riesgos.md)
-- [Registro de revisión](docs/iter1-inicio/revision-pares.md)
+- [Revisión](docs/iter1-inicio/revision.md)
 - [Convenciones del repositorio](docs/00-convenciones.md)
 
 ## Diagramas
