@@ -1,12 +1,17 @@
-# Revisión por pares: ITER-1
+# Registro de revisión documental y seguimiento de hallazgos: ITER-1
 
-Revisor: Marco Antonio Martell Alvarez
+Fecha de las observaciones iniciales: 19/10/2026  
+Última actualización del seguimiento: 20/10/2026  
+Revisor consignado en el documento original: Marco Antonio Martell Alvarez  
+Pull Request: [#1 · ITER1: artefactos de Inicio para Comercial Nazareth](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth/pull/1)
 
-Fecha: 19/10/2026
+## Estado de esta revisión
 
-Pull Request: https://github.com/seckfly/Grupo_3_ISW_Comercial_Nazareth/pull/1
+Este archivo conserva las observaciones iniciales y las respuestas registradas, y actualiza el estado de cada hallazgo. El PR #1 y sus commits figuran bajo la cuenta seckfly, con commits atribuidos a Marco Martell. Por tanto, el registro actual no acredita una revisión por pares independiente.
 
-| # | Pregunta | Sí / No | Hallazgo o comentario |
+GitHub no muestra revisiones formales ni comentarios de revisión en el PR #1. Antes de fusionarlo, otro integrante debe revisar los cambios y registrar su evaluación en GitHub. No se han solicitado revisores ni invitado colaboradores.
+
+| # | Pregunta | Resultado inicial | Hallazgo o comentario |
 |---|---|---|---|
 | 1 | ¿La Visión define claramente qué incluye y qué no incluye? | Sí, con observación | Precisar el alcance de compras y recepción. |
 | 2 | ¿El roadmap tiene entregables y responsable en cada iteración? | Parcialmente | Asignar los cargos a integrantes concretos. |
@@ -16,7 +21,7 @@ Pull Request: https://github.com/seckfly/Grupo_3_ISW_Comercial_Nazareth/pull/1
 | 6 | ¿Cada riesgo tiene mitigación y responsable? | Parcialmente | Concretar responsables y comprobación de resultados. |
 | 7 | ¿Los identificadores y los commits siguen las convenciones? | Parcialmente | Referenciar las partes afectadas en los siguientes commits. |
 
-## Respuestas del revisor
+## Observaciones registradas
 
 ### 1. Visión y alcance
 
@@ -46,14 +51,24 @@ Los riesgos sí tienen medidas propuestas para atenderlos. Por ejemplo, se plant
 
 En general, los documentos y archivos siguen las convenciones del repositorio. Los identificadores permiten reconocer los requisitos, los casos de uso y los riesgos, y los mensajes de los cambios indican la iteración a la que pertenecen. Mejoraría algunos mensajes futuros para que también señalen qué parte del proyecto se modificó, cuando corresponda.
 
-## Hallazgos y correcciones
+## Seguimiento de hallazgos
 
-| # | Hallazgo | Corrección | Estado | Commit o enlace |
+| # | Hallazgo | Corrección aplicada o requerida | Estado | Evidencia / siguiente paso |
 |---|---|---|---|---|
-| 1 | La inclusión de compras y recepción necesita una redacción más precisa. | Aclarar que pertenecen al alcance y distinguir su implementación posterior. | Por atender | |
-| 2 | El roadmap y los riesgos asignan funciones sin identificar integrantes. | Asociar cada responsabilidad con un integrante del grupo. | Por atender | |
-| 3 | La matriz y el roadmap difieren en algunos entregables. | Unificar la planificación de requisitos, pruebas, manual y modelo de estados de compra. | Por atender | |
-| 4 | Las ramas E1, E2 y C1 del diagrama no tienen continuación. | Indicar el retorno o la terminación de cada rama. | Por atender | |
-| 5 | El diagrama de actividad omite la vinculación opcional del cliente. | Representar el flujo alterno A1 mediante CU02. | Por atender | |
-| 6 | Las mitigaciones no indican cómo comprobar su resultado. | Definir la comprobación correspondiente a cada medida. | Por atender | |
-| 7 | Algunos commits no identifican las partes afectadas. | Incluir la referencia correspondiente en los siguientes commits. | Por aplicar | |
+| 1 | La inclusión de compras y recepción necesita una redacción más precisa. | La Visión y el SRS aclaran que forman parte del alcance especificado, pero aún no están implementadas. | Aplicado en documentación | [Visión](vision.md) y [SRS](srs-breve.md). |
+| 2 | El roadmap y los riesgos asignan funciones sin identificar integrantes. | Se añadieron nombres y una distribución inicial de trabajo. | Propuesto; confirmar con el grupo | [Responsables](responsables.md). No se han invitado colaboradores. |
+| 3 | La matriz y el roadmap difieren en algunos entregables. | La matriz ahora incluye los artefactos del roadmap y distingue el trabajo planificado del entregado. | Aplicado en documentación | [Matriz fase-artefacto](matriz-fase-artefacto.md) y [roadmap](roadmap.md). |
+| 4 | Las ramas E1, E2 y C1 del diagrama requieren salidas claras. | La fuente editable y el SVG contienen las excepciones de stock, datos inválidos, persistencia y compensación. | Contenido actualizado; revisión visual pendiente | Comparar la geometría y los conectores de draw.io y SVG antes del cierre. |
+| 5 | El diagrama de actividad omite la vinculación opcional del cliente. | El flujo documenta CU02 como alternativa cuando el comprador se identifica. | Aplicado en documentación y fuente del diagrama | [Proceso crítico CU01](proceso-critico.md). |
+| 6 | Las mitigaciones no indican cómo comprobar su resultado. | Se agregó una comprobación verificable para cada riesgo. | Aplicado en documentación | [Registro de riesgos](riesgos.md). Los riesgos siguen abiertos hasta que exista evidencia. |
+| 7 | Algunos commits no identifican las partes afectadas. | Se precisó la convención para incluir IDs cuando corresponda. | Convención definida; historial conservado | Los commits existentes no se reescriben. |
+| 8 | La revisión registrada no es independiente. | Un integrante distinto del autor debe revisar el PR y registrar la revisión en GitHub. | Pendiente | El PR #1 no tiene revisiones formales registradas. |
+| 9 | Falta el enlace del tablero de trabajo. | Añadir la URL del Trello cuando el grupo la tenga definida. | Pendiente | No se inventa una URL. |
+
+## Condiciones para cerrar la revisión
+
+- Un integrante distinto del autor revisa el PR #1 y registra la revisión en GitHub.
+- El grupo confirma o ajusta la distribución de responsabilidades.
+- Se cotejan visualmente los diagramas con el informe y sus fuentes editables.
+- Se añade el enlace de Trello.
+- Se actualiza el estado de cada riesgo con evidencia, sin marcar mitigaciones como completadas por el solo hecho de estar documentadas.
