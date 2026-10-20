@@ -4,15 +4,15 @@
 
 | ID | Requisito | Comportamiento requerido | CU | Estado técnico |
 |---|---|---|---|---|
-| RF-01 | Registrar venta | Registrar productos, cantidades y método de pago; calcular el total y conservar venta, detalle y salida de stock en una operación. | CU01 | Servicio transaccional disponible; la interfaz confirma una venta local. |
+| RF-01 | Registrar venta | Registrar productos, cantidades y método de pago; calcular el total y conservar venta, detalle y salida de stock en una operación. | CU01 | Servicio transaccional disponible; la interfaz confirma una venta local. Falta integración de extremo a extremo. |
 | RF-02 | Consultar existencias y alertas | Mostrar el stock y señalar productos activos cuya cantidad sea menor o igual al umbral mínimo configurado. | CU06 | Consulta API disponible; la interfaz usa datos de ejemplo. |
 | RF-03 | Identificar proveedor de la orden | Guardar razón social, RUC y teléfono del proveedor dentro de la orden, sin exigir un catálogo independiente. | CU08 | Especificado; sin servicio de compras. |
 | RF-04 | Registrar orden de compra | Conservar proveedor, productos, cantidades, costos y estado pendiente, recibida o anulada; calcular el total estimado. | CU08 | Especificado; sin implementación. |
 | RF-05 | Registrar recepción | Registrar cantidades recibidas de una orden pendiente, aumentar el stock y crear movimientos de entrada en una transacción. | CU09 | Especificado; no existe servicio de recepción. |
-| RF-06 | Acceder según perfil | Permitir inicio y cierre de sesión y mostrar la navegación correspondiente al perfil administrativo o al cliente registrado. | Transversal | Sesión de demostración local y autenticación JWT separada. |
-| RF-07 | Consultar catálogo | Buscar productos por nombre y categoría, mostrar precio y disponibilidad, y permitir favoritos y listas en el portal. | CU03 | Catálogo local; endpoint de consulta disponible. |
-| RF-08 | Gestionar promociones | Crear, editar, pausar, activar y eliminar campañas por producto, con descuento, vigencia y estado. | CU04 | CRUD local y endpoints separados. |
-| RF-09 | Solicitar separación | Crear una solicitud con productos, importe estimado y código, conservando el estado pendiente de confirmación. | CU05 | Solicitud local; sin API de reservas. |
+| RF-06 | Acceder según perfil | Permitir inicio y cierre de sesión y mostrar la navegación correspondiente al perfil administrativo o al cliente registrado. | Transversal | Sesión de demostración local y autenticación JWT separada. La integración y las pruebas de rol están pendientes. |
+| RF-07 | Consultar catálogo | Buscar productos por nombre y categoría, mostrar precio y disponibilidad, y permitir favoritos y listas en el portal. | CU03 | Catálogo local; endpoint de consulta disponible. La integración de cada vista debe verificarse. |
+| RF-08 | Gestionar promociones | Crear, editar, pausar, activar y eliminar campañas por producto, con descuento, vigencia y estado. | CU04 | CRUD local y endpoints separados. Falta confirmar la integración entre ambos. |
+| RF-09 | Solicitar separación | Crear una solicitud con productos, importe estimado y código, conservando el estado pendiente de confirmación. | CU05 | Solicitud local; sin API de reservas. No bloquea stock. |
 | RF-10 | Vincular cliente a la venta | Asociar un cliente registrado cuando se identifique y permitir ventas sin cliente vinculado. | CU02 | API admite customerId opcional; selector de interfaz pendiente. |
 | RF-11 | Consultar clientes frecuentes | Mostrar nombre, contacto, frecuencia e historial básico de clientes identificados. | Consulta administrativa | Vista con datos de ejemplo; sin ruta de clientes. |
 | RF-12 | Consultar resumen y reportes | Mostrar ventas, métodos de pago y productos con movimiento por periodo. | Consulta administrativa | Resumen API parcial; reportes de interfaz con datos de ejemplo. |
@@ -33,7 +33,7 @@
 | CU08 | Registrar orden de compra | Responsable de compras | RF-03, RF-04, RF-07 |
 | CU09 | Gestionar compras (Recepción de mercadería) | Responsable de compras | RF-05 |
 
-CU01 incluye CU03. CU02 extiende CU01 cuando el comprador se identifica como cliente registrado. CU05 y CU08 incluyen CU03. CU08 extiende CU06 cuando el stock está por debajo del mínimo y Humberto decide reponer. La recepción requiere una orden pendiente.
+CU01 incluye CU03. CU02 extiende CU01 cuando el comprador se identifica como cliente registrado. CU05 y CU08 incluyen CU03. CU08 extiende CU06 cuando el stock está por debajo del mínimo y Humberto decide reponer. La recepción requiere una orden pendiente. CU07 no forma parte del modelo vigente.
 
 ![Diagrama de casos de uso de Comercial Nazareth](../../modelos/iter1/casos-de-uso.png)
 
@@ -55,6 +55,14 @@ CU01 incluye CU03. CU02 extiende CU01 cuando el comprador se identifica como cli
 - RB-03: una venta puede registrarse sin cliente asociado.
 - RB-04: una orden de compra no aumenta el stock. El incremento ocurre al confirmar la recepción.
 - RB-05: una solicitud de separación no confirma una venta ni garantiza el bloqueo de existencias.
-- RB-06: la alerta muestra stock menor o igual al mínimo; la decisión de crear una orden se toma cuando el stock está por debajo del mínimo.
+- RB-06: la alerta muestra stock menor o igual al mínimo; la decisión de crear una orden se toma cuando el stock está por debajo del mínimo. Confirmar el comportamiento esperado cuando el stock es exactamente igual al umbral.
 - RB-07: los datos del proveedor se guardan en la orden. El proveedor no tiene credenciales ni un caso de uso independiente.
 - RB-08: una recepción parcial mantiene la orden pendiente y acumula cantidades recibidas. Se rechazan referencias duplicadas y cantidades superiores al saldo por recibir.
+
+## Trazabilidad y evidencia
+
+La [matriz de trazabilidad](matriz-trazabilidad.md) relaciona RF, RNF, CU, HU, artefactos y estado técnico. Los textos completos de las historias de usuario deben cotejarse con el informe académico de referencia; la matriz registra los vínculos recuperados y señala los que requieren verificación.
+
+El informe registra 12 pruebas backend aprobadas y 0 fallidas en el apartado de pruebas correspondiente. Ese resultado no acredita por sí solo la integración completa entre interfaz, API y MySQL, ni la aceptación por parte del usuario. Las pruebas de extremo a extremo y los criterios Gherkin siguen pendientes de evidencia.
+
+La [definición de hecho](definicion-de-hecho.md) contiene los controles acordados para revisar cambios de código. En el estado actual de este repositorio, que contiene documentación y modelos, no se puede declarar cumplida la definición de hecho de una entrega funcional.
