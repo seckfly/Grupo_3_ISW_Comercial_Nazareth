@@ -4,7 +4,7 @@ Grupo 4.
 
 ## 1. Propósito
 
-Organizar el registro de ventas y el control de productos de Comercial Nazareth, con un portal para clientes registrados.
+Organizar el registro de ventas y el control de productos de Comercial Nazareth mediante un sistema de gestión comercial y un portal para clientes registrados.
 
 ## 2. Problema
 
@@ -20,7 +20,7 @@ Incluye:
 - Permitir que los clientes registrados consulten el catálogo, sus datos, historial y beneficios.
 - Registrar solicitudes de separación de productos.
 - Consultar resúmenes de ventas y administrar cuentas según el perfil.
-- Especificar las órdenes de compra y la recepción de mercadería.
+- Registrar órdenes de compra y describir el proceso de recepción de mercadería.
 
 No incluye:
 - Procesamiento bancario o confirmación automática de pagos de Yape y Plin.
@@ -31,7 +31,7 @@ No incluye:
 - Notificaciones automáticas.
 - Detección de stock mediante cámaras.
 
-Las funciones de compra y recepción están especificadas, pero no implementadas en el avance técnico. La solicitud de separación no garantiza que el stock quede bloqueado.
+Las órdenes de compra y la recepción forman parte del alcance especificado, aunque no están implementadas en el avance técnico. La solicitud de separación no bloquea las existencias.
 
 ## 4. Interesados
 
@@ -61,4 +61,4 @@ Las funciones de compra y recepción están especificadas, pero no implementadas
 
 ## 7. Restricciones
 
-El sistema usa React/Vite, Express y MySQL. Yape y Plin se registran como método de pago; la referencia de operación no confirma una transacción bancaria. El proveedor no accede al sistema.
+El sistema utiliza una interfaz React/Vite, un backend Express y una base MySQL. Yape y Plin se registran como método de pago; la referencia de operación no confirma una transacción bancaria. El proveedor no accede al sistema.
