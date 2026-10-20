@@ -14,6 +14,8 @@ La matriz concentra los artefactos necesarios para delimitar el sistema, explica
 | Checklist de coherencia | Revisión inicial registrada | Repetir tras los ajustes de requisitos | Repetir tras las pruebas funcionales | Revisión final |
 | Registro de riesgos | Cinco riesgos identificados | Revisar probabilidad, impacto y mitigación | Incorporar resultados de las comprobaciones | Revisión final |
 | Registro de revisión | Revisión individual registrada | Actualizar si se revisan nuevos cambios | Registrar los hallazgos de las pruebas | Cierre |
+| Escenarios y pruebas | No aplica | Escenarios de datos inválidos, falta de stock y error de persistencia | Pruebas funcionales de CU01 | Pruebas de aceptación |
+| Manual de usuario | No aplica | No aplica | No aplica | Manual de usuario |
+| Validación de datos iniciales | No aplica | No aplica | No aplica | Validación de datos iniciales |
+| Respaldo y recuperación | No aplica | No aplica | No aplica | Comprobación de respaldo y recuperación |
 | Convenciones y versión | Estructura e identificadores definidos | Mantener las convenciones | Mantener el historial de cambios | Publicar v1.0-iter1 |
-
-La selección prioriza el registro de venta y su efecto sobre el stock. No se añaden diagramas de clases, secuencia o estados sin una necesidad concreta que reduzca un riesgo del proyecto.
