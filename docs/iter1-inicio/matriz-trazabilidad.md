@@ -10,7 +10,7 @@ Esta matriz consolida los vínculos de RF, RNF, CU, HU y artefactos registrados 
 | RF-02 | CU06 | HU-04 | PR-02 | Parcial: consulta API disponible; la interfaz usa datos de ejemplo. | Conectar la vista y probar el umbral mínimo. |
 | RF-03 | CU08 | HU-09 | PR-09 | Especificado; no hay servicio de compras. | Implementar los datos del proveedor dentro de la orden si se prioriza CU08. |
 | RF-04 | CU08 | HU-10 | PR-10 | Especificado; no implementado. | Persistir orden, líneas, costos, estado y total estimado. |
-| RF-05 | CU09 | HU-11 | PR-11 | Especificado; no existe servicio de recepción. | Implementar recepción transaccional y movimientos de entrada. |
+| RF-05 | CU09 | HU-11 | PR-11 | Especificado; existe soporte parcial de inventario, pero no se acredita un servicio transaccional de recepción. | Implementar recepción transaccional y movimientos de entrada. |
 | RF-06 | Transversal | HU-01 | PR-06 | Sesión de demostración local y autenticación JWT separada. | Integrar autenticación, navegación y autorización por rol. |
 | RF-07 | CU03 | HU-07 | PR-07 | Catálogo local y endpoint de consulta disponible. | Verificar la integración de búsqueda, disponibilidad, favoritos y listas. |
 | RF-08 | CU04 | HU-06 | PR-08 | CRUD local y endpoints separados. | Conectar interfaz y API; validar vigencia y estado de campañas. |
