@@ -1,1 +1,1 @@
-Entregables previstos para ITER-2: SRS revisado, casos de uso validados, diagramas de clases y secuencia de CU01, diseño de integración y casos de prueba.
+Trabajo previsto para ITER-2: análisis y diseño, con refinamiento del SRS, los casos de uso, la matriz de trazabilidad y los flujos alternos de CU01.
