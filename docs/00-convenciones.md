@@ -9,6 +9,7 @@
 - RSK-###: riesgo.
 - ITER-#: iteración RUP.
 - CLS-Nombre: clase del modelo.
+- PR-##: comprobación propuesta; no significa Pull Request de GitHub.
 
 Los identificadores conservan la numeración del informe del proyecto. No se reutiliza un ID para otro elemento.
 
