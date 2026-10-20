@@ -7,18 +7,18 @@
 
 | # | Pregunta de revisión | Resultado | Observación |
 |---|---|---|---|
-| 1 | ¿La Visión define qué incluye y qué queda fuera? | Sí | El alcance está delimitado. Las órdenes de compra y la recepción se describen como funciones especificadas, no como parte de la integración técnica actual. |
-| 2 | ¿El roadmap contiene entregables y responsables para las cuatro iteraciones? | Sí | Se identifican las cuatro fases, los responsables y el periodo de trabajo de las semanas 8 a 10. |
-| 3 | ¿La matriz fase-artefacto coincide con el roadmap? | Sí | Ambos documentos priorizan la Visión, requisitos, modelos, glosario, riesgos y revisión de coherencia. |
-| 4 | ¿El diagrama muestra el flujo principal y al menos dos excepciones? | Sí | CU01 representa la validación de datos, la falta de stock y el error de persistencia, incluida la compensación de la transacción. También contempla la vinculación opcional del cliente. |
-| 5 | ¿Los actores y conceptos se nombran de forma consistente? | Sí | El señor Humberto Dávalos desempeña los cuatro roles internos. Se distinguen responsabilidades, no cuatro trabajadores. |
-| 6 | ¿Cada riesgo tiene probabilidad, impacto, mitigación y responsable? | Sí | El registro contiene cinco riesgos relacionados con las brechas técnicas descritas en el informe y define cómo comprobar cada mitigación. |
-| 7 | ¿Los identificadores, carpetas y commits siguen las convenciones? | Sí | La estructura y los identificadores son consistentes. La convención de commits queda definida para los cambios de cada iteración. |
+| 1 | ¿La Visión define qué incluye y qué queda fuera? | Sí | Las órdenes de compra y la recepción se describen como funciones especificadas, no como parte de la integración técnica actual. |
+| 2 | ¿El roadmap distingue los artefactos de ITER-1 del trabajo previsto para las fases posteriores? | Sí | Las tareas de ITER-2 a ITER-4 se presentan como planificación y se mantienen alineadas con las tarjetas del tablero. |
+| 3 | ¿La matriz fase-artefacto coincide con el roadmap? | Sí | Ambos documentos usan los mismos artefactos seleccionados y las mismas fases. |
+| 4 | ¿El diagrama muestra el flujo principal y al menos dos excepciones? | Sí | CU01 representa datos inválidos, falta de stock y error de persistencia, incluida la compensación. También contempla la vinculación opcional del cliente. |
+| 5 | ¿Los actores y conceptos se nombran de forma consistente? | Sí | Humberto Dávalos desempeña los cuatro roles internos; se distinguen responsabilidades, no cuatro trabajadores. |
+| 6 | ¿Cada riesgo tiene probabilidad, impacto, mitigación y responsable? | Sí | El registro contiene cinco riesgos relacionados con las brechas técnicas descritas en el informe. |
+| 7 | ¿Los identificadores, carpetas y nombres de archivo siguen las convenciones? | Sí | La estructura y los identificadores están documentados en las convenciones del repositorio. |
 
 ## Correcciones incorporadas
 
-- Se alinearon las cuatro fases del roadmap con el periodo de las semanas académicas 8 a 10.
-- Se ajustó la matriz para incluir solo artefactos relacionados con el alcance y el proceso crítico.
-- Se consolidó el registro en cinco riesgos y se asignó un responsable a cada uno.
-- Se precisó la diferencia entre la alerta de stock y la decisión de crear una orden de compra.
-- Se unificaron los términos de venta, stock, umbral mínimo y recepción de mercadería.
+- Se ajustó el roadmap para distinguir los artefactos de ITER-1 del trabajo previsto para ITER-2, ITER-3 e ITER-4.
+- Se retiraron del roadmap y de la matriz los entregables que no forman parte del tablero ni de los artefactos documentados: manual de usuario, validación del stock inicial y respaldo y recuperación.
+- Se alinearon el roadmap y la matriz con las tareas de análisis y diseño, implementación y pruebas, y validación y entrega.
+- Se aclaró que las comprobaciones de la matriz de trazabilidad son criterios definidos, no resultados de pruebas ejecutadas en este repositorio.
+- Se mantuvo el registro de revisión individual y se unificaron los términos de venta, stock, umbral mínimo y recepción de mercadería.
