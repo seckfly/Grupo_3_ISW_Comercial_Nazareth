@@ -20,7 +20,7 @@ Humberto tiene una sesión administrativa activa. Los productos están activos y
 
 ## Excepciones y compensación
 
-- E1. Si falta stock, informar qué producto no tiene cantidad suficiente y rechazar la venta.
+- E1. Si falta stock, informar qué producto no tiene cantidad suficiente y rechazar el intento actual. El usuario puede iniciar una nueva selección.
 - E2. Si la venta está vacía o las cantidades no son válidas, solicitar la corrección.
 - E3. Si falla la persistencia, no confirmar la venta.
 - C1. Revertir la transacción para evitar que queden una venta parcial o existencias descontadas sin una venta confirmada.
