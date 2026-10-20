@@ -1,61 +1,36 @@
 # Matriz de trazabilidad: Comercial Nazareth
 
-Esta matriz consolida los vínculos de RF, RNF, CU, HU y artefactos registrados en la documentación del proyecto. El estado técnico describe la evidencia reportada; no significa que la función esté validada de extremo a extremo.
+La matriz relaciona requisitos funcionales y no funcionales con casos de uso, historias de usuario, artefactos técnicos y comprobaciones descritas en el informe. Los identificadores PR-01 a PR-19 nombran comprobaciones propuestas, no pull requests de GitHub.
 
 ## Requisitos funcionales
 
-| RF | Caso de uso | Historia de usuario | Artefacto de referencia | Estado técnico reportado | Pendiente de cierre |
-|---|---|---|---|---|---|
-| RF-01 | CU01 | HU-02, HU-03 | PR-01 | Parcial: existe una transacción en backend, pero la interfaz confirma una venta local. | Integrar UI, servicio y MySQL; probar confirmación y rollback. |
-| RF-02 | CU06 | HU-04 | PR-02 | Parcial: consulta API disponible; la interfaz usa datos de ejemplo. | Conectar la vista y probar el umbral mínimo. |
-| RF-03 | CU08 | HU-09 | PR-09 | Especificado; no hay servicio de compras. | Implementar los datos del proveedor dentro de la orden si se prioriza CU08. |
-| RF-04 | CU08 | HU-10 | PR-10 | Especificado; no implementado. | Persistir orden, líneas, costos, estado y total estimado. |
-| RF-05 | CU09 | HU-11 | PR-11 | Especificado; existe soporte parcial de inventario, pero no se acredita un servicio transaccional de recepción. | Implementar recepción transaccional y movimientos de entrada. |
-| RF-06 | Transversal | HU-01 | PR-06 | Sesión de demostración local y autenticación JWT separada. | Integrar autenticación, navegación y autorización por rol. |
-| RF-07 | CU03 | HU-07 | PR-07 | Catálogo local y endpoint de consulta disponible. | Verificar la integración de búsqueda, disponibilidad, favoritos y listas. |
-| RF-08 | CU04 | HU-06 | PR-08 | CRUD local y endpoints separados. | Conectar interfaz y API; validar vigencia y estado de campañas. |
-| RF-09 | CU05 | HU-08 | PR-05 | Solicitud almacenada localmente; no hay API de reservas. | Definir integración y dejar claro que la solicitud no bloquea stock. |
-| RF-10 | CU02 | HU-05 | PR-04 | La API admite customerId opcional; selector de interfaz pendiente. | Integrar la selección de cliente y probar la venta sin cliente. |
-| RF-11 | Consulta administrativa | No registrado en el vínculo recuperado | PR-12 | Vista con datos de ejemplo y sin ruta de clientes reportada. | Confirmar el vínculo HU en el informe e integrar la consulta real. |
-| RF-12 | Consulta administrativa | No registrado en el vínculo recuperado | PR-13 | Resumen API parcial; reportes con datos de ejemplo. | Confirmar el vínculo HU y validar los resultados por periodo. |
-| RF-13 | Transversal | No registrado en el vínculo recuperado | PR-14 | Gestión local y endpoints separados, sin sincronización. | Confirmar el vínculo HU e integrar el control de accesos. |
-| RF-14 | Portal de clientes | No registrado en el vínculo recuperado | PR-15 | Vista de referencia con historial y puntos predeterminados. | Confirmar el vínculo HU e integrar datos de la cuenta. |
-| RF-15 | CU06 | No registrado en el vínculo recuperado | PR-16 | Formulario visual y tabla products; guardado y ajustes pendientes. | Confirmar el vínculo HU y completar persistencia e historial de ajustes. |
-
-La indicación "No registrado en el vínculo recuperado" señala una brecha por cotejar con el informe; no significa que la historia de usuario no exista.
+| RF | CU o HU | Artefacto técnico / estado | Comprobación definida |
+|---|---|---|---|
+| RF-01 | CU01 / HU-02, HU-03 | saleService.createSale; sales y sale_items. La interfaz confirma una venta local. | PR-01: total y stock transaccional. |
+| RF-02 | CU06 / HU-04 | /api/dashboard, Product y products. La interfaz usa datos de ejemplo. | PR-02: stock menor o igual al umbral. |
+| RF-03 | CU08 / HU-09 | Datos del proveedor dentro de la orden; sin servicio de compras. | PR-09: identificación obligatoria conservada en la orden. |
+| RF-04 | CU08 / HU-10 | No hay servicio ni tablas de orden. | PR-10: guardar una orden no modifica el stock. |
+| RF-05 | CU09 / HU-11 | inventory_movements permite registrar entradas, sin servicio de recepción. | PR-11: recepción sin duplicados. |
+| RF-06 | HU-01 / acceso transversal | AuthContext, authController, autenticación y control de rol separados. | PR-06: sesión y autorización. |
+| RF-07 | CU03 / HU-07 | Products, filterCatalog y endpoint /products. | PR-07: filtros y estado vacío. |
+| RF-08 | CU04 / HU-06 | Promotions, Promotion y promotionService; interfaz y API separadas. | PR-08: descuento y fechas. |
+| RF-09 | CU05 / HU-08 | createReservation y localStorage; no hay API de reservas. | PR-05: solicitud y código. |
+| RF-10 | CU02 / HU-05 | createSale.customerId y sales.customer_id; selector de interfaz no conectado. | PR-04: venta con y sin cliente. |
+| RF-11 | Consulta administrativa | Customers y mockData. | PR-12: consulta de cliente. |
+| RF-12 | Consulta administrativa | Reports, Overview y /api/dashboard. | PR-13: resumen contrastado con ventas. |
+| RF-13 | Configuración | Settings, User y userService. | PR-14: gestión y protección de cuenta. |
+| RF-14 | Portal de clientes | ClientHome y Account; historial y puntos de ejemplo. | PR-15: historial de cuenta. |
+| RF-15 | CU06 | Inventory y products; el formulario no guarda el producto. | PR-16: alta y ajuste de producto. |
 
 ## Requisitos no funcionales
 
-| RNF | Criterio | Artefacto de referencia | Estado / evidencia pendiente |
-|---|---|---|---|
-| RNF-01 | Venta simple de hasta 3 líneas en menos de 15 s, excluyendo la espera de pago externo. | SaleDrawer y servicio de venta · PR-17 | No se recuperó una medición de tiempo reproducible. Medir el flujo acordado y guardar el resultado. |
-| RNF-02 | El cliente no ve opciones administrativas y la API rechaza roles no autorizados. | visibleNavigation, auth, requireRole · PR-06 | La sesión de demostración y JWT están separados. Probar navegación y llamadas directas a la API. |
-| RNF-03 | Productos, stock y resumen responden en ≤3 s con un usuario concurrente y catálogo local de demostración. | Rutas products y dashboard · PR-18 | No se recuperó una medición. Registrar entorno, datos y tiempo de respuesta. |
-| RNF-04 | Venta, detalle y movimiento se confirman juntos; ante error no quedan cambios parciales. | createSale y transacción SQL · PR-01 | La transacción backend está disponible, pero la UI no la invoca. Ejecutar pruebas integradas y de rollback. |
-| RNF-05 | Totales y subtotales con 2 decimales; diferencia permitida S/ 0,00. | cartSummary, paymentState, calculateSaleTotal · PR-03 | Se reporta diferencia entre cálculos de interfaz y backend. Unificar la regla y probar casos con descuento. |
-| RNF-06 | Al menos una copia diaria y recuperación de prueba con ventas incluidas. | Base comercial_nazareth y respaldo · PR-19 | Procedimiento de respaldo por implementar y validar mediante restauración de prueba. |
+| RNF | Artefacto técnico | Criterio de verificación |
+|---|---|---|
+| RNF-01 | SaleDrawer y servicio de venta. | PR-17: medir diez ventas simples y comprobar el límite de 15 segundos en las condiciones declaradas. |
+| RNF-02 | visibleNavigation, auth y requireRole. | PR-06: comprobar la navegación por perfil y el rechazo HTTP 401/403 cuando corresponda. |
+| RNF-03 | Rutas products y dashboard. | PR-18: medir diez consultas por operación y verificar el límite de tres segundos bajo el entorno declarado. |
+| RNF-04 | createSale y transacción SQL. | PR-01: comprobar venta completa o reversión sin efectos parciales. |
+| RNF-05 | cartSummary, paymentState y calculateSaleTotal. | PR-03: comprobar total de S/ 20,10, pago en efectivo de S/ 50,00 y vuelto de S/ 29,90, con dos decimales. |
+| RNF-06 | Base comercial_nazareth y procedimiento de respaldo. | PR-19: generar una copia y comprobar la recuperación de los registros incluidos. |
 
-## Vínculos de historias de usuario recuperados
-
-| HU | RF relacionado |
-|---|---|
-| HU-01 | RF-06 |
-| HU-02 | RF-01 |
-| HU-03 | RF-01 |
-| HU-04 | RF-02 |
-| HU-05 | RF-10 |
-| HU-06 | RF-08 |
-| HU-07 | RF-07 |
-| HU-08 | RF-09 |
-| HU-09 | RF-03 |
-| HU-10 | RF-04 |
-| HU-11 | RF-05 |
-
-Esta matriz conserva los vínculos disponibles. Antes de cerrar la iteración, cotejar los textos completos de HU-01 a HU-11 y los criterios de aceptación con el informe académico para evitar duplicar o reconstruir historias de memoria.
-
-## Evidencia y reglas de actualización
-
-- Una función se marca como integrada cuando existe evidencia de interfaz, API y persistencia funcionando en conjunto.
-- Una prueba backend aislada no acredita la integración de la interfaz ni la aceptación del usuario.
-- Toda modificación de un RF o RNF debe actualizar sus CU, HU, artefactos y pruebas relacionadas.
-- Los riesgos y las mitigaciones se mantienen abiertos hasta adjuntar evidencia verificable.
+La matriz conserva los estados descritos en el informe. La existencia de un artefacto o de una comprobación definida no se interpreta como evidencia de una ejecución nueva.
