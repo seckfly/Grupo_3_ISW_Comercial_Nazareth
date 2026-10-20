@@ -23,8 +23,9 @@ El trabajo documentado en la línea base de ITER-1 se desarrolló durante las se
 
 ## Diagramas
 
-- [Diagrama de casos de uso](modelos/iter1/casos-de-uso.png)
-- [Diagrama de actividad de CU01 en SVG](modelos/iter1/actividad-registrar-venta.svg)
+- [Diagrama de casos de uso (PNG)](modelos/iter1/casos-de-uso.png)
+- [Diagrama de actividad CU01 — Registrar venta (PNG)](modelos/iter1/actividad-registrar-venta.png)
+- [Diagrama de actividad CU01 en SVG](modelos/iter1/actividad-registrar-venta.svg)
 - [Archivo editable de CU01 en draw.io](modelos/iter1/actividad-registrar-venta.drawio)
 
 La documentación distingue las funciones descritas en el informe de aquellas que cuentan con integración técnica. El registro de una orden de compra no modifica el stock; el inventario cambia cuando se registra la recepción de mercadería.
