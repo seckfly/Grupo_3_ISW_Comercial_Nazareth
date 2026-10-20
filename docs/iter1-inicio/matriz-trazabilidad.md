@@ -1,10 +1,10 @@
 # Matriz de trazabilidad: Comercial Nazareth
 
-La matriz relaciona requisitos funcionales y no funcionales con casos de uso, historias de usuario, artefactos técnicos y comprobaciones descritas en el informe. Los identificadores PR-01 a PR-19 nombran comprobaciones propuestas, no pull requests de GitHub.
+La matriz relaciona requisitos funcionales y no funcionales con casos de uso, historias de usuario, referencias técnicas y comprobaciones descritas en el informe de avance. Las referencias a componentes y rutas identifican elementos consignados en ese informe; no son archivos de código incluidos aquí. Los identificadores PR-01 a PR-19 nombran comprobaciones propuestas, no pull requests de GitHub.
 
 ## Requisitos funcionales
 
-| RF | CU o HU | Artefacto técnico / estado | Comprobación definida |
+| RF | CU o HU | Referencia técnica y estado descrito | Comprobación propuesta |
 |---|---|---|---|
 | RF-01 | CU01 / HU-02, HU-03 | saleService.createSale; sales y sale_items. La interfaz confirma una venta local. | PR-01: total y stock transaccional. |
 | RF-02 | CU06 / HU-04 | /api/dashboard, Product y products. La interfaz usa datos de ejemplo. | PR-02: stock menor o igual al umbral. |
