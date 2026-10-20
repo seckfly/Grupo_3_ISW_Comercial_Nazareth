@@ -4,7 +4,7 @@
 
 Proyecto académico de Comercial Nazareth, negocio minorista de abarrotes y productos de primera necesidad ubicado en Ascope, La Libertad.
 
-El trabajo documentado corresponde a las semanas académicas 8, 9 y 10. El roadmap de este repositorio mantiene la misma distribución de fases, entregables, responsables y plazos que el [tablero de Trello del proyecto](https://trello.com/b/9LEaT3KG/roadmap-rup-comercial-nazareth).
+El trabajo documentado en la línea base de ITER-1 se desarrolló durante las semanas académicas 8, 9 y 10. El [roadmap RUP](docs/iter1-inicio/roadmap.md) planifica las cuatro fases: los entregables de ITER-2 a ITER-4 son previstos y no se presentan como artefactos ya producidos en la versión v1.0-iter1. El [tablero de Trello](https://trello.com/b/9LEaT3KG/roadmap-rup-comercial-nazareth) organiza las tareas por estado de avance y mantiene una lista separada de riesgos.
 
 ## Documentación
 
@@ -29,4 +29,4 @@ El trabajo documentado corresponde a las semanas académicas 8, 9 y 10. El roadm
 
 La documentación distingue las funciones descritas en el informe de aquellas que cuentan con integración técnica. El registro de una orden de compra no modifica el stock; el inventario cambia cuando se registra la recepción de mercadería.
 
-La convención de cierre de ITER-1 utiliza la versión v1.0-iter1.
+La etiqueta v1.0-iter1 identifica la línea base de la fase de Inicio.
