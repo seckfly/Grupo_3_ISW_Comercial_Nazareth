@@ -1,0 +1,1 @@
+Entregables de ITER-4: manual de usuario, pruebas de aceptación, validación de datos iniciales y preparación de la entrega.

@@ -1,0 +1,1 @@
+Entregables de ITER-2: SRS revisado, casos de uso validados, diagramas de clases y secuencia de CU01, diseño de integración y casos de prueba.
