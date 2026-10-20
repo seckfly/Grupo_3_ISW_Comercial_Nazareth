@@ -19,7 +19,7 @@ Este checklist distingue los puntos comprobados de los que todavía necesitan ev
 | 13 | Existe una revisión por pares independiente en el PR. | Pendiente | El PR #1 no tiene revisiones formales registradas en GitHub. El registro documental existente no sustituye la revisión de otro integrante. |
 | 14 | El enlace de Trello está incluido. | Pendiente | El repositorio todavía no contiene la URL del tablero. |
 | 15 | Se puede publicar v1.0-iter1. | Pendiente | Esperar revisión independiente, validaciones finales y cierre del PR. |
-| 16 | La regla de reposición es inequívoca en el límite del stock mínimo. | Pendiente de confirmar | La alerta se activa con stock menor o igual al umbral, mientras que la decisión de reposición se describe para stock inferior al umbral. Confirmar el comportamiento cuando ambos valores son iguales. |
+| 16 | La regla de reposición está reflejada de forma consistente. | Regla definida; verificación documental pendiente | El informe define alerta cuando stock ≤ mínimo; la extensión CU08 se activa por stock < mínimo y decisión de Humberto. Si stock = mínimo, se muestra la advertencia, pero esa condición por sí sola no activa CU08. Cotejar que esta regla aparezca igual en SRS, casos de uso, diagramas y pruebas. |
 
 ## Condición de cierre
 
