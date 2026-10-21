@@ -1,4 +1,4 @@
-# Checklist de coherencia
+# Checklist de coherencia.
 
 Revisión individual realizada por Marco Antonio Martell Alvarez el 19/10/2026.
 
