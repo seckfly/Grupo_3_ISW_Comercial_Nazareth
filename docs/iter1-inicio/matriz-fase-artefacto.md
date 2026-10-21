@@ -19,5 +19,3 @@ La matriz organiza la madurez prevista de los artefactos seleccionados para el p
 | Revisión | Base | — | — | — |
 | Pruebas funcionales | — | Borrador | Base | Final |
 | Convenciones y versión | Base | Refinado | Refinado | Final |
-
-El diagrama de actividad de CU01 se modela desde Inicio porque la venta relaciona el importe cobrado con el inventario. La etiqueta v1.0-iter1 identifica la línea base de ITER-1; los estados futuros de la matriz no describen el contenido actual de esa versión.
