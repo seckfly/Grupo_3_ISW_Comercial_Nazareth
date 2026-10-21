@@ -1,4 +1,4 @@
-# Sistema de gestión comercial y portal de clientes
+# Sistema de gestión comercial y portal de clientes.
 
 **Grupo 4 · Ingeniería de Software**
 
