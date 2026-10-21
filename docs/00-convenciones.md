@@ -37,4 +37,4 @@ Ejemplo: ITER1: [RF-01, CU01] documenta el flujo de venta.
 
 Formato: vX.Y-iterN.
 
-La versión de cierre de la primera iteración se identifica como v1.0-iter1.
+La etiqueta v1.0-iter1 identifica la publicación inicial de la primera iteración. La etiqueta v1.1-iter1 identifica la revisión publicada con las correcciones documentales y el PNG del diagrama de actividad de CU01.
